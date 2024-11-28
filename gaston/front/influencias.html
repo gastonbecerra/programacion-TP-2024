@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Influencias de Serge Moscovici</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header-container"></div>
+    <section>
+        <div class="botones">
+            <button onclick="location.href='index.html'">Inicio</button>
+        </div>
+    </section>
+
+    <main>
+        <h2>Influencias de Serge Moscovici</h2>
+        <p>
+            Serge Moscovici fue un psicólogo social que influenció en gran medida el campo de las ciencias sociales, especialmente en la psicología y la sociología. Su trabajo ha tenido un impacto significativo en el estudio de las minorías activas y cómo las mismas pueden producir cambios en las mayorías.
+        </p>
+        <img src="https://images.pexels.com/photos/3825573/pexels-photo-3825573.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Influencia de Serge Moscovici">
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script>
+        async function cargarComponentes() {
+            try {
+                document.getElementById('header-container').innerHTML = await fetch('header.html').then(response => response.text());
+                document.getElementById('footer-container').innerHTML = await fetch('footer.html').then(response => response.text());
+            } catch (error) {
+                console.error("Error al cargar los componentes:", error);
+            }
+        }
+        cargarComponentes();
+    </script>
+</body>
+</html>

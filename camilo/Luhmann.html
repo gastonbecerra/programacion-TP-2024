@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Obras de Niklas Luhmann</title>
+    <link rel="stylesheet" href="Styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    
+            <header>
+                <button id="themeToggle" style="margin: 10px; padding: 5px 10px; position: absolute; right: 10px; top: 10px;">Modo oscuro</button>
+            
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="marx.html">Karl Marx</a></li>
+                <li><a href="luhmann.html">Niklas Luhmann</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <button class="toggleParagraph">Luhmann</button>
+        <p class="toggleContent" style="display: none;">
+        
+            Niklas Luhmann abordó el sistema político desde la perspectiva de la teoría de sistemas. Para él, la política es un sistema social autónomo que se distingue por su función de generar decisiones colectivamente vinculantes para la sociedad. Este sistema opera mediante el código binario "gobierno/oposición", lo que permite procesar la complejidad social al decidir quién ejerce el poder en un momento dado.
+            
+            Luhmann argumenta que el sistema político no tiene una relación directa de subordinación con otros sistemas, como la economía o el derecho, sino que interactúa con ellos de manera estructuralmente acoplada. Por ejemplo, las políticas económicas no son dictadas exclusivamente por el sistema político, sino que este debe responder a las expectativas y restricciones impuestas por la economía.
+            
+            El sistema político, según Luhmann, depende de la comunicación para reproducirse y mantenerse operativo. Las decisiones políticas no solo resuelven problemas inmediatos, sino que también producen expectativas para el futuro. La legitimidad, entonces, no se basa únicamente en valores o consensos, sino en la capacidad del sistema político para manejar la incertidumbre y garantizar la estabilidad en un entorno complejo.
+            
+            En esencia, Luhmann veía la política no como un campo de lucha de clases, sino como un sistema autorreferencial y funcionalmente diferenciado que busca mantener el orden social mediante la comunicación y la decisión</p>
+        <h1>Obras de Niklas Luhmann</h1>
+        <table id="tabla-obras-luhmann">
+            <thead>
+                <tr>
+                    <th>Título</th>
+                    <th>Año</th>
+                    <th>Descripción</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+               
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <div class="footer-left">
+            <img src="UFLO-EAD_logo.png" alt="UFLO Logo" class="footer-logo">
+        </div>
+        <p class="footer-center">© Camilo Gómez</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/UFLOuniversidad/" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://x.com/UFLOuniversidad" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/uflo.universidad/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.uflouniversidad.edu.ar/" target="_blank"><i class="fas fa-globe"></i></a>
+        </div>
+    </footer>
+
+    <script src="script_luhmann.js"></script>
+
+            <script>
+                document.querySelectorAll('.toggleParagraph').forEach(button => {
+                    button.addEventListener('click', function() {
+                        const content = this.nextElementSibling;
+                        if (content.style.display === 'none') {
+                            content.style.display = 'block';
+                            this.textContent = 'Tengan Piedad';
+                        } else {
+                            content.style.display = 'none';
+                            this.textContent = 'Luhmann';
+                        }
+                    });
+                });
+            </script>
+            
+            <script>
+                
+                document.getElementById('themeToggle').addEventListener('click', function() {
+                    document.body.classList.toggle('dark-mode');
+                    const isDark = document.body.classList.contains('dark-mode');
+                    this.textContent = isDark ? 'Modo claro' : 'Modo oscuro';
+                });
+            </script>
+            </body>
+            
+            
+</html>

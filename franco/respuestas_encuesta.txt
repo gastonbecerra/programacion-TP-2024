@@ -1,0 +1,5 @@
+{"usuario_instagram":"no","porque_no_ig":"dada","otra_red_social":"tiktok","tiempo_uso":"menos_de_una_hora","facilidad":"si","influencia":"no"}
+{"usuario_instagram":"no","porque_no_ig":"dada","otra_red_social":"facebook","tiempo_uso":"menos_de_una_hora","facilidad":"no","influencia":"no"}
+{"usuario_instagram":"no","porque_no_ig":"dada","otra_red_social":"facebook","tiempo_uso":"menos_de_una_hora","facilidad":"no","influencia":"no"}
+{"usuario_instagram":"no","porque_no_ig":"adad","otra_red_social":"facebook","tiempo_uso":"entre_una_y_dos_horas","facilidad":"si","influencia":"no"}
+{"usuario_instagram":"no","porque_no_ig":"fafa","otra_red_social":"facebook","tiempo_uso":"mas_de_dos_horas","facilidad":"no","influencia":"si"}

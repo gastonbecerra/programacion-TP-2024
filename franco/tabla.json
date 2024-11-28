@@ -1,0 +1,19 @@
+{
+    "table": [
+      {
+        "Autor": "Niklas Luhmann",
+        "Definicion": "Comunicacion",
+        "link": "glosario.php"
+      },
+      {
+        "Autor": "",
+        "Definicion": "autopoiesis",
+        "link": "glosario.php"
+      },
+      {
+        "Autor": "",
+        "Definicion": "influencia",
+        "link": "glosario.php"
+      }
+    ]
+  }

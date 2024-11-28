@@ -1,0 +1,246 @@
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: #333;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+  background-color: #036635;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+}
+
+.navbar {
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 10px;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+}
+
+main {
+  flex: 1; 
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+  text-align: center;
+}
+
+.content-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 5px 0;
+  flex-wrap: wrap;
+}
+
+.author-card {
+  width: 250px;
+  height: 350px;
+  text-align: center;
+  transition: transform 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.author-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+
+footer {
+  width: 100%;
+  background-color: #036635;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  width: 100px;
+}
+
+.footer-center {
+  flex: 1;
+  text-align: center;
+}
+
+.social-icons {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input, form textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #036635;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+form button:hover {
+  background-color: #024a28;
+}
+
+
+.btn-contacto {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #036635;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.btn-contacto:hover {
+  background-color: #024a28;
+}
+
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 18px;
+  text-align: left;
+}
+
+th, td {
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+
+.author-card img {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.author-card img:hover {
+    transform: scale(1.20);
+    opacity: 0.9;
+}
+
+
+
+p {
+    font-size: 18px;          
+    line-height: 1.8;         
+    color: #333;             
+    max-width: 700px;         
+    margin: 20px auto;        
+    text-align: justify;      
+}
+
+/* Tema oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode a {
+    color: #bb86fc;
+}
+
+body.dark-mode header {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode .toggleParagraph {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #444;
+}
+
+
+body.dark-mode {
+    background-color: #1e1e1e;  
+    color: #e0e0e0;            
+}
+
+body.dark-mode a {
+    color: #80b3ff;           
+}
+
+body.dark-mode header {
+    background-color: #2a2a2a; 
+}
+
+body.dark-mode .toggleParagraph, 
+body.dark-mode #themeToggle {
+    background-color: #3a3a3a;
+    color: #e0e0e0;
+    border: 1px solid #555;    
+}

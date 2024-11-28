@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sociólogas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#sobre">Sobre este proyecto</a></li>
+                <li><a href="#recursos">Recursos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="header-image">
+            <img src="https://pbs.twimg.com/media/E-saxl_XEAEAmsz.jpg" alt="mujeres sociologas">
+        </div>
+        <h1>Sociólogas</h1>
+    </header>
+
+    <section>
+        <h2>Introducción a la Sociología</h2>
+        <p>La sociología es una ciencia social que se dedica al estudio de las sociedades humanas, 
+            sus interacciones, sus estructuras y sus instituciones. 
+            Se centra en analizar las relaciones sociales y los comportamientos colectivos, 
+            así como en comprender los procesos de cambio social y sus efectos en las comunidades.</p>
+    </section>
+
+    <section>
+        <h2>Sociólogas de ayer y de hoy</h2>
+        <p>Realizaremos un recorrido desde la clasificación histórica de la sociología 
+            hasta la actualidad.
+        </p>
+
+        <!clasificacion>
+        <h3><a href="precursoras.php">Precursoras</a></h3>
+        <ul>
+            <li><strong>Harriet Martineau (1802-1876)</strong> - Considerada una de las primeras sociólogas.</li>
+            <li><strong>Jane Addams (1860-1935)</strong> - Activista y trabajadora social.</li>
+        </ul>
+
+        <h3><a href="fundadoras.php">Fundadoras</a></h3>
+        <ul>
+            <li><strong>Charlotte Perkins Gilman (1860-1935)</strong> - Socióloga y feminista.</li>
+            <li><strong>Beatrice Webb (1858-1943)</strong> - Coautora de estudios sobre la pobreza.</li>
+        </ul>
+
+        <h3><a href="clasicas.php">Clásicas</a></h3>
+        <ul>
+            <li><strong>Simone de Beauvoir (1908-1986)</strong> - Filósofa y socióloga francesa.</li>
+            <li><strong>Shulamith Firestone (1945-2012)</strong> - Teórica feminista radical.</li>
+        </ul>
+
+        <h3><a href="latinoamericanas.php">Latinoamericanas</a></h3>
+        <ul>
+            <li><strong>María Luisa Femenías</strong> - Socióloga argentina, especialista en feminismo.</li>
+            <li><strong>Teresa del Valle</strong> - Investigadora sobre el rol de las mujeres en Latinoamérica.</li>
+        </ul>
+
+        <h3><a href="argentinas.php">Argentinas</a></h3>
+         <ul>
+            <li><strong>María Antonia Ruth Sautu</strong> - Socióloga y metodóloga argentina.</li>
+            <li><strong>María Elena Oddone</strong> - Especialista en movimientos sociales y feminismo.</li>
+            <li><strong>Dora Barrancos</strong> - Historiadora y socióloga argentina.</li>
+            <li><strong>Alicia Beatriz Gutiérrez</strong> - Socióloga enfocada en la obra de Pierre Bourdieu.</li>
+            <li><strong>Andrea Alliaud</strong> - Educadora y especialista en formación docente</li>
+            <li><strong>Gisela Catanzaro</strong> - Socióloga enfocada en la teoría política y la filosofía.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Encuesta</h2>
+        <div class="survey">
+            <form action="resultado.php" method="post">
+                <label>¿Conocías alguna socióloga?</label>
+                <input type="radio" id="si" name="conocias" value="si">
+                <label for="si">Sí</label>
+                <input type="radio" id="no" name="conocias" value="no">
+                <label for="no">No</label>
+
+                <label for="cual">¿Cuál?</label>
+                <input type="text" id="cual" name="cual">
+
+                <label>¿Se incorporó en tu plan de estudios como bibliografía alguna socióloga mujer?</label>
+                <input type="radio" id="si_biblio" name="biblio" value="si">
+                <label for="si_biblio">Sí</label>
+                <input type="radio" id="no_biblio" name="biblio" value="no">
+                <label for="no_biblio">No</label>
+
+                <label for="cual_biblio">¿Cuál?</label>
+                <input type="text" id="cual_biblio" name="cual_biblio">
+
+                <label for="materia">¿En qué materia?</label>
+                <input type="text" id="materia" name="materia">
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+/* Contenedor para asegurar que se pueda centrar el iframe */
+.iframe-container {
+    display: flex;
+    justify-content: center;  /* Centra el iframe horizontalmente */
+    align-items: center;  /* Opcional, para centrar verticalmente si se necesita */
+    padding: 20px;
+}
+
+/* Estilos para el iframe */
+.pdf-iframe {
+    border: none; /* Elimina el borde predeterminado */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Agrega sombra suave */
+    max-width: 100%; /* Asegura que el iframe sea responsive */
+    height: 400px; /* Altura fija del iframe */
+    max-height: 600px; /* Altura máxima opcional */
+    width: 600px; /* Establece un ancho fijo */
+    margin: 40px 0; /* Márgenes superior e inferior */
+}
+
+@media (max-width: 768px) {
+    .pdf-iframe {
+        width: 100%; /* En pantallas pequeñas, el iframe tomará el 100% del ancho disponible */
+        height: 300px; /* Ajusta la altura en pantallas pequeñas */
+    }
+}

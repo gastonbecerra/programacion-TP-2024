@@ -1,0 +1,383 @@
+/* Variables y reset */
+:root {
+    --primary-color: #646cff;
+    --secondary-color: #535bf2;
+    --background-color: #ffffff;
+    --text-color: #213547;
+    --navbar-height: 70px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: Inter, system-ui, -apple-system, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--navbar-height);
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto; /* El contenedor de la imagen se ajusta automáticamente */
+    height: auto;
+}
+
+.logo img {
+    width: 70px; /* Ajusta el tamaño del logo aquí */
+    height: 70px; /* Asegura que el logo mantenga su proporción */
+    border-radius: 50%; /* Hace que el logo sea un círculo */
+    object-fit: cover; /* Escala la imagen para que se ajuste correctamente */
+}
+
+
+.nav-items {
+    display: flex;
+    gap: 2rem;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background: none;
+    border: none;
+    color: var(--text-color);
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.dropdown-content {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.dropdown:hover .dropdown-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.dropdown-content a {
+    color: var(--text-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.dropdown-content a:hover {
+    background-color: #f5f5f5;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--navbar-height) 2rem 2rem;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.svg-container {
+    width: 80%;
+    max-width: 500px;
+    margin: 2rem 0;
+}
+
+.svg-container svg {
+    width: 100%;
+    height: auto;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 2rem 0;
+    text-align: center;
+    color: var(--text-color);
+}
+
+/* CTA Button */
+.cta-button {
+    padding: 1rem 2rem;
+    font-size: 1.1rem;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.cta-button:hover {
+    background: var(--secondary-color);
+    transform: translateY(-2px);
+}
+
+.cta-button:active {
+    transform: translateY(0);
+}
+
+/* Smooth Scroll Behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0 1rem;
+    }
+
+    .nav-items {
+        gap: 1rem;
+    }
+
+    .logo span {
+        display: none;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .svg-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-items {
+        gap: 0.5rem;
+    }
+
+    .dropbtn {
+        padding: 0.5rem;
+    }
+
+    .hero {
+        padding: calc(var(--navbar-height) + 1rem) 1rem 1rem;
+    }
+}
+
+.hero {
+    background-image: linear-gradient(120deg, rgba(65, 11, 165, 0.699) 0%, rgba(85, 27, 35, 0.692) 100%), url(https://cdn.goconqr.com/uploads/media/image/32287967/desktop_d89f8731-fdae-4032-b98b-79e89e0ff0d4.jpg);
+    width: 100%;
+    height: 650px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.textos-hero {
+    height: 500px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.textos-hero h1 {
+    font-size: 60px;
+    color: #fff;
+}
+
+.textos-hero p {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+.textos-hero a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 15px;
+    background: #a18cd1;
+    border-radius: 8px;
+    color: #fff;
+}
+
+.svg-hero {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+.dropbtn i{
+    margin-right: 5px;
+}
+
+
+/* Estilos del Footer */
+#footer {
+    background-color: #ff695c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.footer-brand {
+    font-weight: bold;
+}
+
+.contact-info {
+    margin-top: 10px;
+}
+
+.contact-link {
+    text-decoration: none;
+    color: #ccc;
+    font-size: 14px;
+}
+
+.contact-link:hover {
+    color: #fff;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-link {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.social-icon {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-link:hover .social-icon {
+    transform: scale(1.1);
+}
+
+
+/* Contenedor principal */
+.containerr {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ocupa toda la altura de la pantalla */
+    padding: 0 20px; /* Espaciado lateral */
+    background: linear-gradient(45deg, #6e7c7c, #ff695c); /* Fondo atractivo con un gradiente suave */
+}
+
+/* Caja de texto que contiene el contenido */
+.text-box {
+    background: #fff; /* Fondo blanco para el texto */
+    padding: 40px;
+    border-radius: 10px; /* Bordes redondeados */
+    max-width: 900px; /* Ancho máximo */
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    transition: transform 0.3s ease-in-out; /* Efecto de transición para movimiento */
+    overflow: hidden; /* Evitar desbordamientos */
+}
+
+/* Animación suave para el texto */
+.text-box:hover {
+    transform: translateY(-10px); /* Efecto de elevación al hacer hover */
+}
+
+/* Título de la sección */
+.text-box h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+/* Estilos del párrafo */
+.text-box p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+    text-align: justify;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+/* Estilo de enlace (si lo tienes) */
+.text-box a {
+    color: #ff695c;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.text-box a:hover {
+    text-decoration: underline;
+}
+
+/* Efecto de desplazamiento del contenido */
+.containerr {
+    animation: scrollUp 3s ease-out infinite;
+}
+
+/* Definir la animación */
+@keyframes scrollUp {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Efecto de desplazamiento hacia arriba */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}

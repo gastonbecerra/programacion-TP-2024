@@ -1,0 +1,54 @@
+{
+    "marx": [
+        {
+            "titulo": "La ideología alemana",
+            "anio": 1846,
+            "descripcion": "Crítica a las ideologías filosóficas alemanas de la época.",
+            "detalles": "Eso sería Ilegal, Reflexiona!"
+        },
+        {
+            "titulo": "Manifiesto del Partido Comunista",
+            "anio": 1848,
+            "descripcion": "Fundamentos de la ideología comunista.",
+            "detalles": "Eso sería Ilegal, Reflexiona!"
+        },
+        {
+            "titulo": "El 18 Brumario de Luis Bonaparte",
+            "anio": 1852,
+            "descripcion": "Análisis del Ascenso de Luis Bonaparte.",
+            "detalles": "Eso sería Ilegal, Reflexiona!"
+        },
+        {
+            "titulo": "El capital",
+            "anio": 1867,
+            "descripcion": "Análisis del capitalismo.",
+            "detalles": "Eso sería Ilegal, Reflexiona!"
+        }
+    ],
+    "luhmann": [
+        {
+            "titulo": "Legitimación del poder",
+            "anio": 1983,
+            "descripcion": "Reflexión sobre la legitimidad en los sistemas .",
+            "detalles": "Eso sería Ilegal, Reflexiona!"
+        },
+        {
+            "titulo": "Sociología del riesgo",
+            "anio": 1991,
+            "descripcion": "Una vision desde la perspectiva de sistemas de como se gestiona el riesgo.",
+            "detalles": "Eso sería Ilegal, Reflexiona!"
+        },
+        {
+            "titulo": "La sociedad de la sociedad",
+            "anio": 1997,
+            "descripcion": "Explicación de la teoría de sistemas sociales.",
+            "detalles": "Eso sería Ilegal, Reflexiona!"
+        },
+        {
+            "titulo": "La política como sistema",
+            "anio": 2002,
+            "descripcion": "Análisis de la política desde la teoría de sistemas.",
+            "detalles": "Eso sería Ilegal, Reflexiona!"
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teoría de las Representaciones Sociales</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="header-container"></div>
+    <section>
+        <div class="botones">
+            <button onclick="location.href='index.html'">Inicio</button>
+        </div>
+    </section>
+
+    <main>
+        <h2>Teoría de las Representaciones Sociales</h2>
+        <p>
+            La teoría de las representaciones sociales fue desarrollada por Serge Moscovici en 1961. Define a las representaciones sociales como el conjunto de conceptos, afirmaciones y explicaciones que emergen en la vida cotidiana a través de la comunicación interpersonal.
+        </p>
+        <p>
+            Estas representaciones permiten a los individuos orientarse en su entorno social y material. Al ser compartidas dentro de un grupo social, estas representaciones afectan la manera en que las personas perciben el mundo y reaccionan ante ciertos fenómenos sociales.
+        </p>
+        <img src="https://images.pexels.com/photos/714699/pexels-photo-714699.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Serge Moscovici">
+    </main>
+
+    <div id="footer-container"></div>
+
+    <script>
+        async function cargarComponentes() {
+            try {
+                document.getElementById('header-container').innerHTML = await fetch('header.html').then(response => response.text());
+                document.getElementById('footer-container').innerHTML = await fetch('footer.html').then(response => response.text());
+            } catch (error) {
+                console.error("Error al cargar los componentes:", error);
+            }
+        }
+        cargarComponentes();
+    </script>
+</body>
+</html>

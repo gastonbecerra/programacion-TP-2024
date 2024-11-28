@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Licenciatura en Sociologia</title>
+</head>
+
+<body>
+    <div id="contenedor-principal">
+
+        <div class="imagen">
+
+            <ul class="list-view">
+                <li><a href="ts1.html"> Teoria Sociologica I</a></li>
+                <li><a href="ts2.html"> Teoria Sociologica II</a></li>
+                <li> Teoria Sociologica III</li>
+                <li>Teoria Sociologica IV</li>
+                <li>Teoria Sociologica V</li>
+
+            </ul>
+
+
+        </div>
+        <div id="cuerpo">
+            <header>
+                <h1>Licenciatura en Sociología</h1>
+                <p>La carrera de Sociología se propone la tarea de formar profesionales con una visión teórica y crítica
+                    de la sociedad actual y con conocimientos metodológicos y técnicos de avanzada para investigar sobre
+                    problemáticas sociales complejas y participar en el diseño y la gestión de organizaciones
+                    inteligentes.La Licenciatura en Sociología de UFLO Universidad está diseñada para atender a los
+                    fenómenos y problemáticas sociales con una mirada amplia y rigurosa. Entre estos, nos interesan
+                    especialmente las transformaciones sociales que se han generado en los últimos años a partir de
+                    nuevas tecnologías, como el big data, la inteligencia artificial, o los algoritmos sociales. Creemos
+                    que la sociología debe tener un rol protagónico en estas transformaciones aportando una visión
+                    crítica y comprometida con la construcción de una sociedad más justa.
+                    Nuestra carrera tiene una orientación computacional que integra saberes digitales y nuevas
+                    tecnologías. Nuestros estudiantes, además de dominar las técnicas clásicas de investigación social,
+                    se forman en programación y análisis de datos a través de diversos talleres que se desarrollan desde
+                    el primer hasta el último año. </p>
+
+                    <h2>Padres fundadores de la disciplina:</h2>
+               
+            </header>
+            <main> 
+                <div class="sociologos">
+                    <div id="Durkheim">
+                        <dl hidden>
+                            <dt>Nombre</dt>
+                            <dd>Emile Durkheim</dd>
+                            <dt>Sociologo, Filosofo</dt>
+                            <dt>Nacimiento</dt>
+                            <dd>Francia, 15 de Abril 1858</dd>
+                        </dl>
+                        <img src="https://hoy.com.do/wp-content/uploads/2014/03/rosario.jpg" alt="Durkheim">
+                        <h3>Emile Durkheim</h3>
+                    </div>
+                    <div id="Marx">
+                        <dl hidden>
+                            <dt>Nombre</dt>
+                            <dd>Karl Marx</dd>
+                            <dt>Sociologo, Filosofo y Economista</dt>
+                            <dt>Nacimiento</dt>
+                            <dd>Alemania, 5 de Mayo 1818</dd>
+                        </dl>
+
+                        <img src="https://brujuladigital.net/images/news/es/b_37761_ensayosobre-el-humanismo-de-marxjorge-patino-1.jpg"
+                            alt="Marx">
+                        <h3>Karl Marx</h3>
+                    </div>
+                    <div id="Weber">
+                        <dl hidden>
+                            <dt>Nombre</dt>
+                            <dd>Max Weber</dd>
+                            <dt>Sociologo y Economista</dt>
+                            <dt>Nacimiento</dt>
+                            <dd>Alemania, 14 de Junio 1920</dd>
+                        </dl>
+
+                        <img src="https://www.shutterstock.com/image-illustration/surabaya-indonesia-18-march-2022-600nw-2136724933.jpg"
+                            alt="Weber">
+
+                        <h3>Max Weber</h3>
+
+                    </div>
+                </div>
+            </main>
+            <footer>
+                <div>
+                    <div><span>@gabydallaglio2024</span></div>
+                </div>
+            </footer>
+
+        </div>
+    </div>
+    <script>
+        function Autor(nombre, nacimiento) {
+            this.nombre = nombre;
+            this.nacimiento = nacimiento;
+        }
+        function al_hacer_click(e, id) {
+            document.getElementById(id).children[0].hidden = false;
+            document.getElementById(id).children[1].hidden = true;
+
+        }
+        function al_hacer_doble_click(e, id) {
+
+            document.getElementById(id).children[1].hidden = false;
+            document.getElementById(id).children[0].hidden = true;
+
+        }
+        const id_durkheim = "Durkheim";
+        const Durkheim_texto = document.getElementById('Durkheim').children[1].addEventListener('click', (e) => al_hacer_click(e, id_durkheim));
+        const Durkheim_imagen = document.getElementById('Durkheim').children[0].addEventListener('dblclick', (e) => al_hacer_doble_click(e, id_durkheim));
+
+        const id_marx = "Marx";
+        const Marx_texto = document.getElementById('Marx').children[1].addEventListener('click', (e) => al_hacer_click(e, id_marx));
+        const Marx_imagen = document.getElementById('Marx').children[0].addEventListener('dblclick', (e) => al_hacer_doble_click(e, id_marx));
+
+        const id_weber = "Weber";
+        const Weber_texto = document.getElementById('Weber').children[1].addEventListener('click', (e) => al_hacer_click(e, id_weber));
+        const Weber_imagen = document.getElementById('Weber').children[0].addEventListener('dblclick', (e) => al_hacer_doble_click(e, id_weber));
+
+    </script>
+
+
+</body>
+
+</html>

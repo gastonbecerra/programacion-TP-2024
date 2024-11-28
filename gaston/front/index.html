@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Representaciones Sociales</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        footer {
+            background-color: #222;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .footer-links {
+            margin: 10px 0;
+        }
+
+        .footer-links a {
+            margin: 0 10px;
+            display: inline-block;
+        }
+
+        .social-icon {
+            width: 24px;
+            height: 24px;
+            transition: transform 0.2s ease;
+        }
+
+        .social-icon:hover {
+            transform: scale(1.2);
+        }
+
+        .footer-navigation {
+            margin-top: 10px;
+        }
+
+        .footer-navigation a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        .footer-navigation a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="header-container"></div>
+
+    <img class="imagen-centralizada" src="https://images-cdn.bridgemanimages.com/api/1.0/image/600wm.XXX.82747020.7055475/2071549.jpg" alt="Representaciones Sociales">
+
+    <main>
+        <section>
+            <div id="tabla-representaciones">
+                <table>
+                    <tr>
+                        <th>Característica</th>
+                        <th>Ejemplo</th>
+                    </tr>
+                </table>
+                <table id="tabla-datos">
+                </table>
+            </div>
+        </section>
+
+        <section>
+            <h2>Más Información</h2>
+            <div class="botones">
+                <button onclick="location.href='teoria.html'">Teoría de las Representaciones Sociales</button>
+                <button onclick="location.href='influencias.html'">Influencias de Serge Moscovici</button>
+                <button onclick="location.href='aplicaciones.html'">Aplicaciones de las Representaciones Sociales</button>
+            </div>
+        </section>
+
+        <section>
+            <div class="titulo-busqueda">Buscar en las Representaciones</div>
+            <input type="text" id="busqueda" placeholder="Ingresá tu texto acá">
+            <button id="buscar">Buscar</button>
+            <button id="resetear">Resetear</button>
+        </section>
+
+        <section class="formulario">
+            <h2>Contacto</h2>
+            <form action="../back/procesar_formulario.php" method="POST" id="form-contacto">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="email">Correo Electrónico:</label><br>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="mensaje">Mensaje:</label><br>
+                <textarea id="mensaje" name="mensaje" required></textarea><br><br>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <section>
+        <button id="cambiar-estilo">Modo Nocturno 🌙 / ☀️</button>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Representaciones Sociales</p>
+        <div class="footer-links">
+            <a href="https://www.facebook.com" target="_blank" title="Facebook">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.twitter.com" target="_blank" title="Twitter">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter" class="social-icon">
+            </a>
+            <a href="https://www.instagram.com" target="_blank" title="Instagram">
+                <img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" title="LinkedIn">
+                <img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" alt="LinkedIn" class="social-icon">
+            </a>
+            <a href="mailto:contacto@representaciones-sociales.com" title="Enviar Correo">
+                <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Correo" class="social-icon">
+            </a>
+        </div>
+        <div class="footer-navigation">
+            <a href="teoria.html">Teoría</a> | 
+            <a href="influencias.html">Influencias</a> | 
+            <a href="aplicaciones.html">Aplicaciones</a> | 
+            <a href="contacto.html">Contacto</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
